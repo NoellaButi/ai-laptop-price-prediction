@@ -10,6 +10,7 @@ Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a 
 **Notebooks:**  
 📓 EDA Notebook  
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/01_eda.ipynb)
+
 📓 Modeling Notebook  
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/02_modeling.ipynb)
 
