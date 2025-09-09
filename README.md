@@ -19,12 +19,6 @@ Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a 
 
 ---
 
-## 🚀 Live Demo
-
-<a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">Explore the deployed app on Streamlit</a>
-
----
-
 ## 🔹 Features
 
 - 📂 **Dataset**: raw laptop specs stored in `data/raw/laptop_prices.csv`
@@ -127,9 +121,13 @@ ai-ml-laptop-price/
 
 ---
 
+
 ## 🔹 Demo Screenshot
 
 ![App Demo](reports/assets/demo.png)
+
+👉 Try it live here:  
+<a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">🌐 Laptop Price Predictor (Streamlit)</a>
 
 ---
 
