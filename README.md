@@ -87,3 +87,40 @@ Evaluated on a held-out test split (**test_size = 0.2**, **random_state = 42**).
    ```bash
    streamlit run src/app.py
    ```
+
+---
+
+## 🔹 Project Structure
+
+ai-ml-laptop-price/
+├─ artifacts/ # trained models & saved artifacts
+│ ├─ .gitkeep
+│ ├─ best_gb_model
+│ └─ model_gbr
+│
+├─ data/
+│ ├─ raw/
+│ │ ├─ .gitkeep
+│ │ └─ laptop_prices.csv
+│ └─ preprocessed/ # (reserved; no preprocessing used yet)
+│
+├─ notebooks/
+│ ├─ .gitkeep
+│ ├─ 01_eda.ipynb
+│ └─ 02_modeling.ipynb
+│
+├─ reports/
+│ ├─ train_report.json
+│ └─ assets/
+│ └─ metrics.json
+│
+├─ src/
+│ ├─ app.py # Streamlit app (single/batch prediction)
+│ ├─ train.py # training script
+│ └─ test.py # tests or quick experiments
+│
+├─ requirements.txt
+├─ LICENSE
+└─ README.md
+
+
