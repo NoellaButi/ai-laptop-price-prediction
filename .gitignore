@@ -1,11 +1,23 @@
+# Virtual environments
 .venv/
-__pycache__/
-.ipynb_checkpoints/
-*.pyc
-.DS_Store
 .env
 
-# data (keep structure)
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# Jupyter/Colab
+.ipynb_checkpoints/
+*.ipynb_convert*
+.colab/
+
+# Kaggle
+kaggle.json
+
+# data (keep structure, ignore contents)
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
