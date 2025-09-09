@@ -12,4 +12,4 @@ Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a 
 [![Open Modeling in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/Laptop_Price_Prediction/blob/main/notebooks/02_modeling.ipynb)
 
 **Live Demo:**  
-[Explore the deployed app on Streamlit](https://laptop-prediction-prices.streamlit.app/)
+<a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">Explore the deployed app on Streamlit 🚀</a>
