@@ -31,6 +31,6 @@ Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a 
 - 📊 **Exploratory Data Analysis (EDA)**: performed in `notebooks/01_eda.ipynb`
 - 🤖 **Model Training & Evaluation**: Linear Regression, Random Forest, and Gradient Boosting (`notebooks/02_modeling.ipynb`)
 - 📝 **Reports & Metrics**: results saved in `reports/train_report.json` and `reports/assets/metrics.json`
-- 💾 **Artifacts**: trained models and best estimator stored in `artifacts/`
+- 💾 **Artifacts**: trained models and best estimator stored in `artifacts/best_gb_model.pkl` and `artifacts/model_gbr.pkl`
 - 🌐 **Interactive App**: Streamlit app (`src/app.py`) for single or batch price prediction
 - 🔄 **Reproducibility**: environment captured in `requirements.txt` and open-source licensed
