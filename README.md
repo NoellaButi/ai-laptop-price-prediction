@@ -111,8 +111,9 @@ ai-ml-laptop-price/
 │
 ├─ reports/
 │ ├─ train_report.json
+│ ├─ metrics.json
 │ └─ assets/
-│ └─ metrics.json
+│ └─ demo.png
 │
 ├─ src/
 │ ├─ app.py # Streamlit app (single/batch prediction)
