@@ -93,32 +93,32 @@ Evaluated on a held-out test split (**test_size = 0.2**, **random_state = 42**).
 ## 🔹 Project Structure
 
 ai-ml-laptop-price/
-├─ artifacts/ # trained models & saved artifacts
-│ ├─ .gitkeep
-│ ├─ best_gb_model
-│ └─ model_gbr
+├─ artifacts/                 # trained models & saved artifacts
+│  ├─ .gitkeep
+│  ├─ best_gb_model
+│  └─ model_gbr
 │
 ├─ data/
-│ ├─ raw/
-│ │ ├─ .gitkeep
-│ │ └─ laptop_prices.csv
-│ └─ preprocessed/ # (reserved; no preprocessing used yet)
+│  ├─ raw/
+│  │  ├─ .gitkeep
+│  │  └─ laptop_prices.csv
+│  └─ preprocessed/           # (reserved; no preprocessing used yet)
 │
 ├─ notebooks/
-│ ├─ .gitkeep
-│ ├─ 01_eda.ipynb
-│ └─ 02_modeling.ipynb
+│  ├─ .gitkeep
+│  ├─ 01_eda.ipynb
+│  └─ 02_modeling.ipynb
 │
 ├─ reports/
-│ ├─ train_report.json
-│ ├─ metrics.json
-│ └─ assets/
-│ └─ demo.png
+│  ├─ train_report.json
+│  ├─ metrics.json
+│  └─ assets/
+│     └─ demo.png
 │
 ├─ src/
-│ ├─ app.py # Streamlit app (single/batch prediction)
-│ ├─ train.py # training script
-│ └─ test.py # tests or quick experiments
+│  ├─ app.py                  # Streamlit app (single/batch prediction)
+│  ├─ train.py                # training script
+│  └─ test.py                 # tests or quick experiments
 │
 ├─ requirements.txt
 ├─ LICENSE
