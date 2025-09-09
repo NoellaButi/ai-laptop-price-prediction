@@ -124,7 +124,6 @@ ai-ml-laptop-price/
 ├─ LICENSE
 └─ README.md
 
-
 ---
 
 ## 🔹 Demo Screenshot
