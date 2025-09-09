@@ -91,7 +91,7 @@ Evaluated on a held-out test split (**test_size = 0.2**, **random_state = 42**).
 ---
 
 ## 🔹 Project Structure
-
+```bash
 ai-ml-laptop-price/
 ├─ artifacts/                 # trained models & saved artifacts
 │  ├─ .gitkeep
@@ -123,6 +123,7 @@ ai-ml-laptop-price/
 ├─ requirements.txt
 ├─ LICENSE
 └─ README.md
+```
 
 ---
 
