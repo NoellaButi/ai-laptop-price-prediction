@@ -63,3 +63,27 @@ Evaluated on a held-out test split (**test_size = 0.2**, **random_state = 42**).
 ### 🔹 Features Used
 - **Numeric:** `Ram`, `Weight`, `CPU_freq`, `PrimaryStorage`
 - **Categorical:** `Company`, `CPU_company`, `CPU_model`, `GPU_company`, `GPU_model`, `OS`, `TypeName`, `Screen`, `PrimaryStorageType`, `SecondaryStorageType`, `Touchscreen`, `IPSpanel`, `RetinaDisplay`
+
+---
+
+## 🔹 Quick Start
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/NoellaButi/ai-ml-laptop-price.git
+   cd ai-ml-laptop-price
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Train the model**
+   ```bash
+   python src/train.py
+   ```
+
+5. **Launch the app**
+   ```bash
+   streamlit run src/app.py
+   ```
