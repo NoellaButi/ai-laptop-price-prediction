@@ -127,8 +127,7 @@ ai-ml-laptop-price/
 ![App Demo](reports/assets/demo.jpg)
 
 
-👉 Try it live here:  
-<a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">🌐 Laptop Price Predictor (Streamlit)</a>
+👉 Try it live here:  <a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">🌐 Laptop Price Predictor (Streamlit)</a>
 
 ---
 
