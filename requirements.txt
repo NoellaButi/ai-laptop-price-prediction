@@ -1,8 +1,19 @@
+# Core data science
 pandas>=2.0
 numpy>=1.24
+
+# Machine learning
 scikit-learn>=1.3
+joblib>=1.3
+
+# Visualization
 plotly>=5.22
 kaleido>=0.2
+
+# App / deployment
 streamlit>=1.35
 pyyaml>=6.0
-joblib>=1.3
+
+# (Optional) Notebook support for local runs
+notebook>=7.0
+jupyterlab>=4.0
