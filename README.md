@@ -8,8 +8,7 @@ Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a 
 [![Streamlit](https://img.shields.io/badge/App-Streamlit-red)]()
 
 **Notebooks:**  
-[![Open EDA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/01_eda.ipynb)
-
+[![Open EDA in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/01_eda.ipynb) <br/>
 [![Open Modeling in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/02_modeling.ipynb)
 
 **Live Demo:**  
