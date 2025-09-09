@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-09-09 03:49:13",
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "models": {
+    "linear_regression": {
+      "mse": 172467.44811133426,
+      "r2": 0.6525210538878778
+    },
+    "random_forest": {
+      "mse": 87042.04109614159,
+      "r2": 0.8246319694600523
+    },
+    "gb_numeric": {
+      "mse": 81011.47283794015,
+      "r2": 0.8367820622791002
+    },
+    "gb_full": {
+      "mse": 58509.68007798024,
+      "r2": 0.8821175694689374
+    }
+  },
+  "best_params_gb_numeric": {
+    "model__learning_rate": 0.1,
+    "model__max_depth": 5,
+    "model__n_estimators": 100
+  },
+  "best_params_gb_full": {
+    "model__learning_rate": 0.1,
+    "model__max_depth": 5,
+    "model__n_estimators": 150
+  }
+}
