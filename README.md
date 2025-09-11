@@ -1,137 +1,64 @@
-# 💻 Laptop Price Prediction (ML)
+# Laptop Price Prediction 💻💶  
+Predict Laptop Prices (€) from Specifications using Machine Learning  
 
-Predict laptop prices (€) from specifications using machine learning.  
-Trains baseline and ensemble models, evaluates with MAE/MSE/R², and includes a Streamlit app for interactive inference.
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)]()
-[![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-orange)]()
-[![Streamlit](https://img.shields.io/badge/App-Streamlit-red)]()
-
----
-
-## 📓 Notebooks
-
-**EDA Notebook**  
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/01_eda.ipynb)
-
-**Modeling Notebook**  
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NoellaButi/ai-ml-laptop-price/blob/main/notebooks/02_modeling.ipynb)
+![Language](https://img.shields.io/badge/language-Python-blue.svg) 
+![Notebook](https://img.shields.io/badge/tool-Jupyter-orange.svg) 
+![App](https://img.shields.io/badge/app-Streamlit-red.svg) 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
 
 ---
 
-## 🔹 Features
+✨ **Overview**  
+This project predicts laptop prices in Euros (€) from their specifications using regression and ensemble methods.  
+It includes exploratory data analysis, model training, and an interactive **Streamlit app** for single or batch predictions.  
 
-- 📂 **Dataset**: raw laptop specs stored in `data/raw/laptop_prices.csv`
-- 📊 **Exploratory Data Analysis (EDA)**: performed in `notebooks/01_eda.ipynb`
-- 🤖 **Model Training & Evaluation**: Linear Regression, Random Forest, and Gradient Boosting (`notebooks/02_modeling.ipynb`)
-- 📝 **Reports & Metrics**: results saved in `reports/train_report.json` and `reports/assets/metrics.json`
-- 💾 **Artifacts**: trained models and best estimator stored in `artifacts/best_gb_model.pkl` and `artifacts/model_gbr.pkl`
-- 🌐 **Interactive App**: Streamlit app (`src/app.py`) for single or batch price prediction
-- 🔄 **Reproducibility**: environment captured in `requirements.txt` and open-source licensed
+🛠️ **Workflow**  
+- Load raw dataset of laptop specifications  
+- Perform EDA (distributions, correlations, outliers)  
+- Train baseline (Linear Regression) and ensemble models (Random Forest, Gradient Boosting)  
+- Save trained models & metrics as artifacts  
+- Deploy interactive app with Streamlit  
 
----
-
-## 🔹 Results
-
-Evaluated on a held-out test split (**test_size = 0.2**, **random_state = 42**).
-
-| Model                     | MSE       | RMSE   | R²    |
-|----------------------------|----------:|-------:|------:|
-| Linear Regression          | 172,467   | 415.29 | 0.653 |
-| Random Forest              | 87,042    | 295.03 | 0.825 |
-| Gradient Boosting (numeric)| 81,011    | 284.63 | 0.837 |
-| **Gradient Boosting (full)** | **58,510** | **241.89** | **0.882** |
-| **Final GB (best CV)**     | —         | **237.80** | **0.886** |
-
-📊 Detailed artifacts are saved in:
-- `reports/assets/metrics.json`
-- `reports/train_report.json`
-
-### 🔹 Best Model (Cross-Validation)
-- **Gradient Boosting (full feature set)**
-- Best hyperparameters:
-  - `learning_rate = 0.1`
-  - `max_depth = 3`
-  - `n_estimators = 300`
-
-### 🔹 Features Used
-- **Numeric:** `Ram`, `Weight`, `CPU_freq`, `PrimaryStorage`
-- **Categorical:** `Company`, `CPU_company`, `CPU_model`, `GPU_company`, `GPU_model`, `OS`, `TypeName`, `Screen`, `PrimaryStorageType`, `SecondaryStorageType`, `Touchscreen`, `IPSpanel`, `RetinaDisplay`
-
----
-
-## 🔹 Quick Start
-
-1. **Clone the repo**
-   ```bash
-   git clone https://github.com/NoellaButi/ai-ml-laptop-price.git
-   cd ai-ml-laptop-price
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Train the model**
-   ```bash
-   python src/train.py
-   ```
-
-5. **Launch the app**
-   ```bash
-   streamlit run src/app.py
-   ```
-
----
-
-## 🔹 Project Structure
+📁 **Repository Layout**  
 ```bash
-ai-ml-laptop-price/
-├─ artifacts/                 # trained models & saved artifacts
-│  ├─ .gitkeep
-│  ├─ best_gb_model
-│  └─ model_gbr
-│
-├─ data/
-│  ├─ raw/
-│  │  ├─ .gitkeep
-│  │  └─ laptop_prices.csv
-│  └─ preprocessed/           # (reserved; no preprocessing used yet)
-│
-├─ notebooks/
-│  ├─ .gitkeep
-│  ├─ 01_eda.ipynb
-│  └─ 02_modeling.ipynb
-│
-├─ reports/
-│  ├─ train_report.json
-│  ├─ metrics.json
-│  └─ assets/
-│     └─ demo.png
-│
-├─ src/
-│  ├─ app.py                  # Streamlit app (single/batch prediction)
-│  ├─ train.py                # training script
-│  └─ test.py                 # tests or quick experiments
-│
-├─ requirements.txt
-├─ LICENSE
-└─ README.md
+data/           # raw & preprocessed datasets
+notebooks/      # EDA and modeling notebooks
+src/            # training script & Streamlit app
+reports/        # metrics, plots, training results
+artifacts/      # saved models
+requirements.txt
+README.md
 ```
 
----
+🚦 **Demo**
 
+Train model:
+```bash
+python src/train.py
+```
 
-## 🔹 Demo Screenshot
+Run Streamlit app:
+```bash
+streamlit run src/app.py
+```
 
-![App Demo](reports/assets/demo.jpg)
+🔍 **Features**
+- Exploratory Data Analysis with visualizations
+- Regression models: Linear, Random Forest, Gradient Boosting
+- Evaluation: MAE, MSE, R²
+- Saves trained models & reports as artifacts
+- Interactive Streamlit app for inference
 
+🚦 **Results (Held-Out Test Set)**
+```bash
+Model                MSE      RMSE     R²
+--------------------------------------------
+Linear Regression   172,467   415.29   0.653
+Random Forest        87,042   295.03   0.825
+Gradient Boosting    58,510   241.89   0.882
+Final GB (CV best)     —      237.80   0.886
+```
 
-👉 Try it live here:  <a href="https://laptop-prediction-prices.streamlit.app/" target="_blank">🌐 Laptop Price Predictor (Streamlit)</a>
+📜 **License**
 
----
-
-## 🔹 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
+MIT (see [LICENSE](LICENSE))
