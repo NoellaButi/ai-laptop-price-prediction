@@ -54,6 +54,7 @@ ai-laptop-price-prediction/
 ├─ src/            # training script & Streamlit app
 ├─ reports/        # metrics, plots, training results
 ├─ artifacts/      # saved models
+├─ docs/
 ├─ requirements.txt
 └─ README.md
 ```
