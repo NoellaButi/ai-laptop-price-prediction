@@ -70,7 +70,7 @@ Final GB (CV best)	—	237.80	0.886
 - Dockerize for consistent deployment
 - CI/CD pipeline for auto-deploy
 
-📜 License
+## 📜 License
 MIT (see LICENSE)
 
 ---
