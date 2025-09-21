@@ -5,12 +5,14 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -18,9 +20,19 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install pytest
 
-      - name: Run tests
+      - name: Sanity import (optional)
         run: |
-          if [ -d tests ] || ls -1 *.py 2>/dev/null | grep -q .; then
+          python - <<'PY'
+          import pandas, numpy, sklearn, yaml
+          import importlib
+          for m in ["streamlit", "plotly", "joblib"]:
+              importlib.import_module(m)
+          print("Imports OK")
+          PY
+
+      - name: Run tests (if present)
+        run: |
+          if [ -d tests ] || ls -1 *.py src/*.py 2>/dev/null | grep -q .; then
             pytest -q || echo "Tests failed"
           else
             echo "No tests found; skipping"
