@@ -50,11 +50,11 @@ pytest -q
 ```bash
 ai-laptop-price-prediction/
 ├─ data/           # raw & preprocessed datasets
+├─ docs/           # laptop-prediction-demo.png
 ├─ notebooks/      # EDA and modeling notebooks
 ├─ src/            # training script & Streamlit app
 ├─ reports/        # metrics, plots, training results
 ├─ artifacts/      # saved models
-├─ docs/
 ├─ requirements.txt
 └─ README.md
 ```
