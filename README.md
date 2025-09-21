@@ -10,7 +10,7 @@ Predict Laptop Prices (€) from Specifications using Machine Learning
 
 👉 [**Live Demo (Streamlit)**](https://laptop-prediction-prices.streamlit.app/)  
 
-![Laptop Price Predictor UI](docs/demo.png)
+![Laptop Price Predictor UI](docs/laptop-prediction-demo.png)
 
 ---
 
