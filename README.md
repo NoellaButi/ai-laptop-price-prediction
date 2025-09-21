@@ -59,11 +59,12 @@ ai-laptop-price-prediction/
 ```
 
 ## 📊 Results (Held-Out Test Set)
-Model	MSE	RMSE	R²
-Linear Regression	172,467	415.29	0.653
-Random Forest	87,042	295.03	0.825
-Gradient Boosting	58,510	241.89	0.882
-Final GB (CV best)	—	237.80	0.886
+| Model               |    MSE   |  RMSE  |   R²   |
+|---------------------|---------:|-------:|-------:|
+| Linear Regression   | 172,467  | 415.29 | 0.653  |
+| Random Forest       | 87,042   | 295.03 | 0.825  |
+| Gradient Boosting   | 58,510   | 241.89 | 0.882  |
+| **Final GB (CV best)** |   —     | 237.80 | **0.886** |
 
 ## 🔮 Roadmap
 - Add hyperparameter search with Optuna
