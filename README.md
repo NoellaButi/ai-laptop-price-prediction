@@ -73,6 +73,6 @@ ai-laptop-price-prediction/
 - CI/CD pipeline for auto-deploy
 
 ## 📜 License
-MIT (see LICENSE)
+MIT (see [LICENSE](LICENSE))
 
 ---
